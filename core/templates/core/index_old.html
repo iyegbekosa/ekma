@@ -1,0 +1,289 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css_extra %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+{% endblock css_extra %}
+
+{% block content %}
+	
+	{% include 'header_index.html' %}
+
+	<!-- Header -->
+
+	<div class="home">
+
+		<!-- Hero Slider -->
+		<div class="hero_slider_container">
+			<div class="hero_slider owl-carousel">
+				
+				<!-- Hero Slide -->
+				<div class="hero_slide">
+					<div class="hero_slide_background" style="background-image:url({% static 'images/slider_background.jpg' %})"></div>
+					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+						<div class="hero_slide_content text-center">
+							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">BUILDING <span>LIVES</span> FOR <span>GREATNESS!</span></h1>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Hero Slide -->
+				<div class="hero_slide">
+					<div class="hero_slide_background" style="background-image:url({% static 'images/slider_background.jpg' %})"></div>
+					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+						<div class="hero_slide_content text-center">
+							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">BUILDING <span>LIVES</span> FOR <span>GREATNESS!</span></h1>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Hero Slide -->
+				<div class="hero_slide">
+					<div class="hero_slide_background" style="background-image:url({% static 'images/slider_background.jpg' %})"></div>
+					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+						<div class="hero_slide_content text-center">
+							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">BUILDING <span>LIVES</span> FOR <span>GREATNESS!</span></h1>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			{% comment %} <div class="hero_slider_left hero_slider_nav trans_200"><span class="trans_200">prev</span></div>
+			<div class="hero_slider_right hero_slider_nav trans_200"><span class="trans_200">next</span></div> {% endcomment %}
+		</div>
+
+	</div>
+
+	<div class="hero_boxes">
+		<div class="hero_boxes_inner">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-4 hero_box_col">
+						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
+							<img src="{% static 'images/earth-globe.svg' %}" class="svg" alt="">
+							<div class="hero_box_content">
+								<h2 class="hero_box_title">Academics</h2>
+								<a href="{% url 'academics' %}" class="hero_box_link">view more</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 hero_box_col">
+						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
+							<img src="{% static 'images/smartphone.svg' %}" class="svg" alt="">
+							<div class="hero_box_content">
+								<h2 class="hero_box_title">Admissions</h2>
+								<a href="{% url 'academics' %}" class="hero_box_link">view more</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 hero_box_col">
+						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
+							<img src="{% static 'images/mortarboard.svg' %}" class="svg" alt="">
+							<div class="hero_box_content">
+								<h2 class="hero_box_title">Student Life</h2>
+								<a href="{% url 'about' %}" class="hero_box_link">view more</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Our Mission -->
+
+	<div class="services page_section">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title text-center">
+						<h1>Our Mission</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- First column with text -->
+				<div class="col-lg-6">
+					<p class="text-left">
+						We are committed to nurturing individual growth by fostering each child's unique potential. Our innovative curriculum integrates social-emotional development with early literacy and numeracy, preparing students for a dynamic future. 
+						We cultivate confident, creative thinkers equipped with real-world skills, positioning them to excel in any industry. 
+						Through our holistic education approach, we balance academic excellence with emotional intelligence, preparing well-rounded individuals for future success. 
+						In an inspirational learning environment, we ignite curiosity and a lifelong passion for learning.
+					</p>
+				</div>
+				<!-- Second column with image -->
+				<div class="col-lg-6 d-flex justify-content-center">
+					<img src="{% static 'images/vision_image.jpg' %}" alt="Our Vision" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- Our Vision -->
+
+	{% comment %} <div class="services page_section"> {% endcomment %}
+		
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title text-center">
+						<h1>Our Vission </h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="row services_row">
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="{% static 'images/earth-globe.svg' %}" alt="">
+					</div>
+					<h3>Individual Growth</h3>
+					<p>We nurture each child's unique potential, ensuring personalized learning experiences that promote individual growth and creativity.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="{% static 'images/exam.svg' %}" alt="">
+					</div>
+					<h3>Innovative Curriculum</h3>
+					<p>Our innovative curriculum integrates social-emotional development with early literacy and numeracy, preparing students for a dynamic future.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="{% static 'images/books.svg' %}" alt="">
+					</div>
+					<h3>Building Confident Leaders</h3>
+					<p>We cultivate confident, creative thinkers who are ready to make their mark in the world with character and competence.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="{% static 'images/professor.svg' %}" alt="">
+					</div>
+					<h3>Real-World Skills</h3>
+					<p>Our hands-on learning approach equips students with real-world skills, positioning them ahead in any industry they choose to serve.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="{% static 'images/blackboard.svg' %}" alt="">
+					</div>
+					<h3>Holistic Education</h3>
+					<p>Our holistic education approach balances academic excellence with emotional intelligence, preparing well-rounded individuals for future success.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="{% static 'images/mortarboard.svg' %}" alt="">
+					</div>
+					<h3>Inspirational Learning Environment</h3>
+					<p>We create a supportive, inspirational environment that sparks curiosity and a lifelong passion for learning.</p>
+				</div>
+
+			</div>
+		</div>
+	{% comment %} </div> {% endcomment %}
+
+	<!-- Register -->
+
+	<div class="register">
+
+		<div class="container-fluid">
+			
+			<div class="row row-eq-height">
+				<div class="col-lg-6 nopadding">
+					
+					<!-- Register -->
+
+					<div class="register_section d-flex flex-column align-items-center justify-content-center">
+						<div class="register_content text-center">
+							<h1 class="register_title">Discover the <span>DIFFERENCE</span> at Excellent Kiddies Montessori Academy</h1>
+							<p class="register_text">Register now and empower your child with skills for a bright future and watch them thrive in our supportive environment.</p>
+							<div class="button button_1 register_button mx-auto trans_200"><a href="#">ENROLL NOW</a></div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-lg-6 nopadding">
+					
+					<!-- Search -->
+
+					<div class="search_section d-flex flex-column align-items-center justify-content-center">
+						<div class="search_background" style="background-image:url({% static 'images/search_background.jpg' %});"></div>
+						<div class="search_content text-center">
+							<h1 class="search_title">Join our school today</h1>
+							<form id="search_form" class="search_form" action="post">
+								<input id="search_form_name" class="input_field search_form_name" type="text" placeholder="Course Name" required="required" data-error="Course name is required.">
+								<input id="search_form_category" class="input_field search_form_category" type="text" placeholder="Category">
+								<input id="search_form_degree" class="input_field search_form_degree" type="text" placeholder="Degree">
+								<button id="sOWearch_submit_button" type="submit" class="search_submit_button trans_200" value="Submit">Enroll NOW</button>
+							</form>
+						</div> 
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Extra curricular -->
+
+	<div class="popular page_section">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title text-center">
+						<h1>Extra-curricular Activities</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="row course_boxes">
+				
+				<!-- Popular Course Item -->
+				<div class="col-lg-4 course_box">
+					<div class="card">
+						<img class="card-img-top" src="{% static 'images/sports.png' %}" alt="https://unsplash.com/@kellybrito">
+						<div class="card-body text-center">
+							<div class="card-title"><a href="courses.html">SPORTS</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Popular Course Item -->
+				<div class="col-lg-4 course_box">
+					<div class="card">
+						<img class="card-img-top" src="{% static 'images/enterpreneurship.png' %}" alt="https://unsplash.com/@cikstefan">
+						<div class="card-body text-center">
+							<div class="card-title"><a href="courses.html">ENTERPRENEURSHIP</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Popular Course Item -->
+				<div class="col-lg-4 course_box">
+					<div class="card">
+						<img class="card-img-top" src="{% static 'images/cultural.png' %}" alt="https://unsplash.com/@dsmacinnes">
+						<div class="card-body text-center">
+							<div class="card-title"><a href="courses.html">CULTURAL DISPLAY</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	{% include 'footer.html' %}
+
+{% endblock content %}
+
+{% block js_extra %}
+<script src="{% static 'js/custom.js' %}"></script>
+{% endblock js_extra %}

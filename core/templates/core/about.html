@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css_extra %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles/news_post_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/news_post_responsive.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/elements_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/elements_responsive.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/teachers_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/teachers_responsive.css' %}">
+{% endblock css_extra %}
+
+
+{% block content %}
+	
+	{% include 'header.html' %}
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url({% static 'images/sub_page.jpg' %})"></div>
+		</div>
+		<div class="home_content">
+			<h1>{{title}}</h1>
+		</div>
+	</div>
+
+	<!-- Word form propeitor -->
+
+	<div class="become">
+		<div class="container">
+			<div class="row row-eq-height">
+	
+				<div class="col-lg-6 order-2 order-lg-1">
+					<div class="become_title">
+						<h1>A Message from the Proprietor</h1>
+					</div>
+	
+					<p class="become_text">
+						Dear Parents and Guardians, <br><br>
+						At [School Name], we are dedicated to nurturing young minds and shaping the leaders of tomorrow. Our mission is to provide a well-rounded education that fosters academic excellence, creativity, and character development. We believe that every child deserves an environment that encourages curiosity, builds confidence, and prepares them for a bright future. <br><br>
+						Our experienced and passionate educators are committed to providing a nurturing environment where students feel supported and motivated to achieve their best. We take pride in our holistic approach to education, integrating academic rigor with extracurricular activities that stimulate creativity, teamwork, and leadership skills. Your child's success and well-being are at the heart of everything we do, and we look forward to welcoming your family to our school.
+					</p>
+				</div>
+	
+				<div class="col-lg-6 order-1 order-lg-2">
+					<div class="become_image">
+						<img src="{% static 'images/photos/PHOTO-2024-09-30-21-46-15.jpg' %}" alt="Proprietor's photo">
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	</div>
+		
+	<!-- About the School -->
+
+	<div class="become">
+	<div class="container">
+	<div class="row row-eq-height">
+
+	<div class="col-lg-12 order-2 order-lg-1">
+	<div class="news_post">
+		<div class="news_post_text">
+			<p>
+				Welcome to [School Name], a place where education goes beyond the classroom. We are committed to providing a holistic learning experience that shapes not only the academic success of our students but also their personal growth. Our approach integrates a rigorous curriculum with nurturing guidance, ensuring that students build a solid foundation in both knowledge and character. At [School Name], we emphasize critical thinking, creativity, and leadership as essential tools that empower our students to thrive in an ever-changing world. <br><br>
+				From the moment your child joins our school community, they will be immersed in an environment designed to inspire curiosity and a love for learning. Our faculty is made up of dedicated professionals who are passionate about helping each student discover their unique strengths and interests. Whether through our innovative teaching methods, personalized attention, or the variety of extracurricular activities, we strive to ensure that every student feels supported and encouraged to pursue their fullest potential.
+			</p>
+		</div>
+
+		<div class="news_post_quote">
+			<p class="news_post_quote_text">
+				<span>E</span>tiam eu purus nec eros varius luctus. Praesent finibus risus facilisis ultricies venena tis. Suspendisse fermentum sodales lacus, lacinia gravida elit.
+			</p>
+		</div>
+
+		<p class="news_post_text" style="margin-top: 59px;">
+			Our commitment to excellence extends beyond academics. At [School Name], we believe in nurturing the whole child—intellectually, emotionally, and socially. Our state-of-the-art facilities, combined with our dynamic range of extracurricular programs, provide ample opportunities for students to explore their passions, develop new skills, and build lasting friendships. Whether it’s through sports, arts, or community service, we encourage our students to engage with the world around them, fostering a sense of responsibility, empathy, and teamwork. <br><br>
+			We take pride in being a school where every child is seen, heard, and valued. By creating an inclusive and supportive learning environment, we ensure that all students, regardless of their background, feel a strong sense of belonging. Our ultimate goal is to prepare our students not only for academic achievement but also for a lifetime of success and fulfillment in whatever path they choose. We invite you to become part of our vibrant school community, where every child's potential is realized, and their future is built with care and purpose.
+		</p>
+	</div>
+	</div>
+
+	</div>
+	</div>
+	</div>
+
+
+	<!-- Teachers -->
+
+	<div class="teachers page_section">
+		<div class="container">
+			<div class="row">
+				
+				<!-- Teacher -->
+				<div class="col-lg-4 teacher">
+					<div class="card">
+						<div class="card_img">
+							<img class="card-img-top trans_200" src="{% static 'images/photos/PHOTO-2024-09-30-21-43-23.jpg' %}" alt="https://unsplash.com/@michaeldam">
+						</div>
+						<div class="card-body text-center">
+							<div class="card-title"><a href="#">Mr Jude Romanus</a></div>
+							<div class="card-text"> Director </div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Teacher -->
+				<div class="col-lg-4 teacher">
+					<div class="card">
+						<div class="card_img">
+							<img class="card-img-top trans_200" src="{% static 'images/photos/PHOTO-2024-09-30-21-44-48.jpg' %}" alt="https://unsplash.com/@jcpeacock">
+						</div>
+						<div class="card-body text-center">
+							<div class="card-title"><a href="#">Dr(Mrs) Constance Romanus</a></div>
+							<div class="card-text"> Director </div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Teacher -->
+				<div class="col-lg-4 teacher">
+					<div class="card">
+						<div class="card_img">
+							<img class="card-img-top trans_200" src="{% static 'images/photos/PHOTO-2024-09-30-21-46-15.jpg' %}" alt="https://unsplash.com/photos/n8jeOSxCRfQ">
+						</div>
+						<div class="card-body text-center">
+							<div class="card-title"><a href="#">Mrs Christy Imudia</a></div>
+							<div class="card-text"> Proprietor </div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Milestones -->
+
+	<div class="milestones">
+		<div class="milestones_background" style="background-image:url({% static 'images/milestones_background.jpg' %})"></div>
+
+		<div class="container">
+			<div class="row">
+				
+				<!-- Milestone -->
+				<div class="col-lg-3 milestone_col">
+					<div class="milestone text-center">
+						<div class="milestone_icon"><img src="{% static 'images/milestone_1.svg' %}" alt="https://www.flaticon.com/authors/zlatko-najdenovski"></div>
+						<div class="milestone_counter" data-end-value="500" data-sign-after="+">10</div>
+						<div class="milestone_text">Current Enrollments</div>
+					</div>
+				</div>
+
+				<!-- Milestone -->
+				<div class="col-lg-3 milestone_col">
+					<div class="milestone text-center">
+						<div class="milestone_icon"><img src="{% static 'images/milestone_2.svg' %}" alt="https://www.flaticon.com/authors/zlatko-najdenovski"></div>
+						<div class="milestone_counter" data-end-value="50" data-sign-after="+">3</div>
+						<div class="milestone_text">Qualified Staff</div>
+					</div>
+				</div>
+
+				<!-- Milestone -->
+				<div class="col-lg-3 milestone_col">
+					<div class="milestone text-center">
+						<div class="milestone_icon"><img src="{% static 'images/milestone_3.svg' %}" alt="https://www.flaticon.com/authors/zlatko-najdenovski"></div>
+						<div class="milestone_counter" data-end-value="15" data-sign-after="+">1</div>
+						<div class="milestone_text">Clubs & Activities</div>
+					</div>
+				</div>
+
+				<!-- Milestone -->
+				<div class="col-lg-3 milestone_col">
+					<div class="milestone text-center">
+						<div class="milestone_icon"><img src="{% static 'images/milestone_4.svg' %}" alt="https://www.flaticon.com/authors/zlatko-najdenovski"></div>
+						<div class="milestone_counter" data-end-value="100" data-sign-after="+">0</div>
+						<div class="milestone_text">Active PTA Members</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+
+	
+	{% include 'footer.html' %}
+
+{% endblock content %}
+
+{% block js_extra %}
+<script src="{% static 'js/teachers_custom.js' %}"></script>
+{% endblock js_extra %}

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css_extra %}
+  <link href="{% static 'gallery/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'gallery/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'gallery/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'gallery/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'gallery/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'gallery/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'gallery/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'styles/contact_styles.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'styles/contact_responsive.css' %}">
+  
+  <link href="{% static 'gallery/css/style.css' %}" rel="stylesheet">
+{% endblock css_extra %}
+
+{% block content %}
+	
+	{% include 'header.html' %}
+
+    <!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url({% static 'images/sub_page.jpg' %})"></div>
+		</div>
+		<div class="home_content">
+			<h1>{{title}}</h1>
+		</div>
+	</div>
+
+
+    <!-- Our Mission -->
+
+
+    <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+    
+            <div class="section-title">
+            <p>{{ album.title }}</p>
+            </div>
+        
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                {% for image in images %}
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="{{image.image.url}}" class="img-fluid" alt="{{image.title}}">
+                        <div class="portfolio-info">
+                            <h4>{{image.title}}</h4>
+                            <p>{{image.description}}</p>
+                            <div class="portfolio-links">
+                                <a href="{{image.image.url}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{image.title}}"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            {% endfor %}
+        </div>
+    </section>
+    <div id="preloader"></div>
+    
+	{% include 'footer.html' %}
+
+{% endblock content %}
+
+{% block js_extra %}
+  <script src="{% static 'gallery/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'gallery/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'gallery/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'gallery/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'gallery/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'gallery/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'gallery/vendor/php-email-form/validate.js' %}"></script>
+
+  <script src="{% static 'gallery/js/main.js' %}"></script>
+{% endblock js_extra %}

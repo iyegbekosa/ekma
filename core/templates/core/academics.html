@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css_extra %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/teachers_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/teachers_responsive.css' %}">
+{% endblock css_extra %}
+
+{% block content %}
+	
+	{% include 'header_index.html' %}
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url({% static 'images/sub_page.jpg' %})"></div>
+		</div>
+		<div class="home_content">
+			<h1>{{title}}</h1>
+		</div>
+	</div>
+
+	<!-- Become -->
+
+	<div class="become">
+		<div class="container">
+			<div class="row row-eq-height">
+	
+				<div class="col-lg-12 order-2 order-lg-1">
+					<div class="news_post">
+						<div class="news_post_text">
+							<p>
+								Welcome to [School Name], a place where education goes beyond the classroom. We are committed to providing a holistic learning experience that shapes not only the academic success of our students but also their personal growth. Our approach integrates a rigorous curriculum with nurturing guidance, ensuring that students build a solid foundation in both knowledge and character. At [School Name], we emphasize critical thinking, creativity, and leadership as essential tools that empower our students to thrive in an ever-changing world. <br><br>
+								From the moment your child joins our school community, they will be immersed in an environment designed to inspire curiosity and a love for learning. Our faculty is made up of dedicated professionals who are passionate about helping each student discover their unique strengths and interests. Whether through our innovative teaching methods, personalized attention, or the variety of extracurricular activities, we strive to ensure that every student feels supported and encouraged to pursue their fullest potential.
+							</p>
+						</div>
+	
+						<div class="news_post_quote">
+							<p class="news_post_quote_text">
+								<span>E</span>tiam eu purus nec eros varius luctus. Praesent finibus risus facilisis ultricies venenatis. Suspendisse fermentum sodales lacus, lacinia gravida elit.
+							</p>
+						</div>
+	
+						<p class="news_post_text" style="margin-top: 59px;">
+							Our commitment to excellence extends beyond academics. At [School Name], we believe in nurturing the whole child—intellectually, emotionally, and socially. Our state-of-the-art facilities, combined with our dynamic range of extracurricular programs, provide ample opportunities for students to explore their passions, develop new skills, and build lasting friendships. Whether it’s through sports, arts, or community service, we encourage our students to engage with the world around them, fostering a sense of responsibility, empathy, and teamwork. <br><br>
+							We take pride in being a school where every child is seen, heard, and valued. By creating an inclusive and supportive learning environment, we ensure that all students, regardless of their background, feel a strong sense of belonging. <br><br>
+							Our academic programs are designed to cater to the unique needs of students at each stage of their development, ensuring a seamless transition from early childhood education to the final stages of secondary school. Below is a detailed breakdown of our academic offerings:
+	
+							<ul>
+								<li><strong>Early Childhood Care and Development Education (ECCDE)</strong><br>
+									Our ECCDE program is the foundation of a child’s educational journey, designed for children aged 0-5. At this stage, we focus on creating a fun, engaging, and stimulating environment that nurtures curiosity and a love for learning. Through play-based learning and structured activities, children develop essential foundational skills in language, numeracy, and social interaction. Our experienced educators are dedicated to providing individualized attention, ensuring that each child grows in confidence and creativity. We also emphasize emotional development, teaching children to express themselves, solve problems, and collaborate with their peers. The ECCDE program sets the stage for lifelong learning by preparing children for a smooth and successful transition into primary education.</li>
+								<br>
+								<li><strong>Primary Education (Basic 1-6)</strong><br>
+									Our Primary Education program, catering to children aged 6-12, provides a comprehensive and engaging curriculum designed to build on the foundational skills developed during early childhood. The curriculum covers core subjects such as Mathematics, English, Science, and Social Studies, while also introducing students to creative subjects like Art and Music. We adopt a holistic approach to education, encouraging not only academic excellence but also the development of creativity, critical thinking, and social responsibility. Our classrooms are vibrant spaces where students are encouraged to ask questions, explore their interests, and develop a love for learning. Teachers use innovative and interactive teaching methods to make lessons engaging and accessible to all learners. In addition to academics, we emphasize the importance of character development, teamwork, and leadership, preparing students to become well-rounded individuals ready to face the challenges of the modern world.</li>
+								<br>
+								<li><strong>Junior Secondary School (JSS 1-3)</strong><br>
+									At the Junior Secondary level, students aged 12-15 are introduced to a broader and more diverse curriculum that includes subjects such as Basic Technology, Business Studies, and Agricultural Science, alongside core subjects like Mathematics, English, and Integrated Science. This stage is crucial for students as they begin to develop a deeper understanding of academic subjects and explore potential career interests. Our Junior Secondary School emphasizes hands-on learning, creative problem-solving, and the development of practical skills that will serve students both in and out of the classroom. Group projects, experiments, and interactive lessons help students develop teamwork and collaboration skills. Character building remains a strong focus, with students encouraged to take on more responsibility, develop leadership qualities, and actively participate in school life. We support each student's growth by providing guidance and mentorship as they prepare for the transition to Senior Secondary School.</li>
+								<br>
+								<li><strong>Senior Secondary School (SSS 1-3)</strong><br>
+									Our Senior Secondary School program offers students aged 15-18 the opportunity to specialize in academic streams that align with their future goals. Students can choose from three academic streams: Science, Arts, or Commercial, allowing them to focus on subjects that match their interests and career aspirations. The Science stream includes subjects like Physics, Chemistry, and Biology, while the Arts stream covers Literature, History, and Government. The Commercial stream focuses on subjects such as Economics, Accounting, and Commerce. Our curriculum is designed to prepare students for national examinations such as the West African Senior School Certificate Examination (WASSCE) and the National Examination Council (NECO) exams, both of which are essential for university admission. In addition to academics, we continue to emphasize personal growth, leadership, and extracurricular involvement. Students are encouraged to take on leadership roles in student government, clubs, and sports teams, helping them develop the confidence and skills needed for success in higher education and beyond.</li>
+							</ul>
+							<br>
+							Our ultimate goal is to prepare our students not only for academic achievement but also for a lifetime of success and fulfillment in whatever path they choose. We invite you to become part of our vibrant school community, where every child's potential is realized, and their future is built with care and purpose.
+						</p>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	</div>
+		
+		<!-- Register -->
+
+		<div class="register">
+
+			<div class="container-fluid">
+				
+				<div class="row row-eq-height">
+					<div class="col-lg-6 nopadding">
+						
+						<!-- Register -->
+	
+						<div class="register_section d-flex flex-column align-items-center justify-content-center">
+							<div class="register_content text-center">
+								<h1 class="register_title">Discover the <span>DIFFERENCE</span> at Excellent Kiddies Montessori Academy</h1>
+								<p class="register_text">Register now and empower your child with skills for a bright future and watch them thrive in our supportive environment.</p>
+								<div class="button button_1 register_button mx-auto trans_200"><a href="#">ENROLL NOW</a></div>
+							</div>
+						</div>
+	
+					</div>
+	
+					<div class="col-lg-6 nopadding">
+						
+						<!-- Search -->
+	
+						<div class="search_section d-flex flex-column align-items-center justify-content-center">
+							<div class="search_background" style="background-image:url({% static 'images/search_background.jpg' %});"></div>
+							<div class="search_content text-center">
+								<h1 class="search_title">Join our school today</h1>
+								<form id="search_form" class="search_form" action="post">
+									<input id="search_form_name" class="input_field search_form_name" type="text" placeholder="Course Name" required="required" data-error="Course name is required.">
+									<input id="search_form_category" class="input_field search_form_category" type="text" placeholder="Category">
+									<input id="search_form_degree" class="input_field search_form_degree" type="text" placeholder="Degree">
+									<button id="sOWearch_submit_button" type="submit" class="search_submit_button trans_200" value="Submit">Enroll NOW</button>
+								</form>
+							</div> 
+						</div>
+	
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	{% include 'footer.html' %}
+
+{% endblock content %}
+
+{% block js_extra %}
+<script src="{% static 'js/teachers_custom.js' %}"></script>
+{% endblock js_extra %}

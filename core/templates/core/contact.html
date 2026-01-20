@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css_extra %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles/contact_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/contact_responsive.css' %}">
+{% endblock css_extra %}
+
+
+{% block content %}
+	
+	{% include 'header_index.html' %}
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url({% static 'images/sub_page.jpg' %})"></div>
+		</div>
+		<div class="home_content">
+			<h1>{{title}}</h1>
+		</div>
+	</div>
+
+	<!-- Contact -->
+
+	<div class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					
+					<!-- Contact Form -->
+					<div class="contact_form">
+						<div class="contact_title">Get in touch</div>
+
+						<div class="contact_form_container">
+							<form action="post">
+								<input id="contact_form_name" class="input_field contact_form_name" type="text" placeholder="Name" required="required" data-error="Name is required.">
+								<input id="contact_form_email" class="input_field contact_form_email" type="email" placeholder="E-mail" required="required" data-error="Valid email is required.">
+								<textarea id="contact_form_message" class="text_field contact_form_message" name="message" placeholder="Message" required="required" data-error="Please, write us a message."></textarea>
+								<button id="contact_send_btn" type="button" class="contact_send_btn trans_200" value="Submit">send message</button>
+							</form>
+						</div>
+					</div>
+						
+				</div>
+
+				<div class="col-lg-4">
+					<div class="about">
+						{% comment %} <div class="about_title">Join Us</div> {% endcomment %}
+						{% comment %} <p class="about_text">
+							We’d love to hear from you! At Excellent Kiddies Montessori Academy, we value open communication and are here to answer any questions you may have. Whether you're a prospective parent looking for more information about our school, a current family needing assistance, or a visitor interested in learning more, we're here to help. 
+						</p> {% endcomment %}
+						
+						<div class="contact_info">
+							<ul>
+								<li class="contact_info_item">
+									<div class="contact_info_icon">
+										<img src="{% static 'images/placeholder.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									Plot A2 Action Area, Behind Federal government girls college Bwari. Plot 217 Kuduru Layout Behind Nigerian Law School, Off Kuduru Road Bwari FCT.
+								</li>
+								<li class="contact_info_item">
+									<div class="contact_info_icon">
+										<img src="{% static 'images/phone-call.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									+234 806 0220 612<br/>
+								</li>
+								<li class="contact_info_item">
+									<div class="contact_info_icon">
+										<img src="{% static 'images/phone-call.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									+234 905 4146 797
+								</li>
+								<li class="contact_info_item">
+									<div class="contact_info_icon">
+										<img src="{% static 'images/envelope.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>excellentkmontacademy@gmail.com
+								</li>
+								<li class="contact_info_item">
+									<div class="contact_info_icon">
+										<img src="{% static 'images/envelope.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>excellentkmontacademy@yahoo.com
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Google Map -->
+
+			<div class="row">
+				<div class="col">
+					<div id="google_map">
+						<div class="map_container">
+							<div id="map"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	{% include 'footer.html' %}
+
+{% endblock content %}
+
+{% block js_extra %}
+<script src="{% static 'js/contact_custom.js' %}"></script>
+{% endblock js_extra %}

@@ -1,0 +1,150 @@
+{% load static %}
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        
+        <!-- Newsletter -->
+
+        <div class="newsletter">
+            <div class="row">
+                <div class="col">
+                    <div class="section_title text-center">
+                        <h1>Subscribe to newsletter</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center">
+                    <div class="newsletter_form_container mx-auto">
+                        <form action="post">
+                            <div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-center">
+                                <input id="newsletter_email" class="newsletter_email" type="email" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                                <button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Content -->
+
+        <div class="footer_content">
+            <div class="row">
+
+                <!-- Footer Column - About -->
+                <div class="col-lg-3 footer_col">
+
+                    <!-- Logo -->
+                    <div class="logo_container">
+                        <div class="logo">
+                            <img src="{% static 'images/logo.png' %}" alt="">
+                            <span>EXCELLENT KIDDIES MONTESSORI ACADEMY</span>
+                        </div>
+                    </div>
+
+                    {% comment %} <p class="footer_about_text">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum, tempor lacus.</p> {% endcomment %}
+
+                </div>
+
+                <!-- Footer Column - Menu -->
+
+                <div class="col-lg-3 footer_col">
+                    <div class="footer_column_title"><div class="footer_contact_icon">
+                        <img src="{% static 'images/placeholder.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+                    </div>
+                    Plot A2 Action Area,  Behind Federal government girls college Bwari. Plot 217 Kuduru Layout Behind Nigerian Law School,  Off Kuduru Road Bwari FCT.</div>
+                    {% comment %} <div class="footer_column_content">
+                        <ul>
+                            <li class="footer_list_item"><a href="#">Home</a></li>
+                            <li class="footer_list_item"><a href="#">About Us</a></li>
+                            <li class="footer_list_item"><a href="courses.html">Courses</a></li>
+                            <li class="footer_list_item"><a href="news.html">News</a></li>
+                            <li class="footer_list_item"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div> {% endcomment %}
+                </div>
+
+                <!-- Footer Column - Usefull Links -->
+
+                <div class="col-lg-3 footer_col">
+                    <div class="footer_column_title"><div class="footer_contact_icon">
+                        <img src="{% static 'images/phone-call.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+                    </div>
+                    +234 806 0220 612</div>
+                    <div class="footer_column_title"><div class="footer_contact_icon">
+                        <img src="{% static 'images/phone-call.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+                    </div>
+                    +234 905 4146 797</div>
+                    {% comment %} <div class="footer_column_content">
+                        <ul>
+                            <li class="footer_list_item"><a href="#">Testimonials</a></li>
+                            <li class="footer_list_item"><a href="#">FAQ</a></li>
+                            <li class="footer_list_item"><a href="#">Community</a></li>
+                            <li class="footer_list_item"><a href="#">Campus Pictures</a></li>
+                            <li class="footer_list_item"><a href="#">Tuitions</a></li>
+                        </ul>
+                    </div> {% endcomment %}
+                </div>
+
+                <!-- Footer Column - Contact -->
+
+                <div class="col-lg-3 footer_col">
+                    <div class="footer_column_title"><div class="footer_contact_icon">
+                        <img src="{% static 'images/envelope.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+                    </div>
+                    excellentkmontacademy@<br/>gmail.com</div>
+                    <div class="footer_column_title"><div class="footer_contact_icon">
+                        <img src="{% static 'images/envelope.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+                    </div>
+                    excellentkmontacademy@<br/>yahoo.com</div>
+                    {% comment %} <div class="footer_column_content">
+                        <ul>
+                            <li class="footer_contact_item">
+                                <div class="footer_contact_icon">
+                                    <img src="{% static 'images/placeholder.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+                                </div>
+                                Blvd Libertad, 34 m05200 Arévalo
+                            </li>
+                            <li class="footer_contact_item">
+                                <div class="footer_contact_icon">
+                                    <img src="{% static 'images/smartphone.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+                                </div>
+                                0034 37483 2445 322
+                            </li>
+                            <li class="footer_contact_item">
+                                <div class="footer_contact_icon">
+                                    <img src="{% static 'images/envelope.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
+                                </div>hello@company.com
+                            </li>
+                        </ul>
+                    </div> {% endcomment %}
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Copyright -->
+
+        <div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+            <div class="footer_copyright">
+                <span style="display: none;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </span>
+            </div>
+                <div class="footer_social ml-sm-auto">
+                    <ul class="menu_social">
+                        <li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li class="menu_social_item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+</footer>
